@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      // FizzBuzz written with JavaScript
+      function fizzbuzz() {
+        for (i = 1; i < 101; i++) {
+          if (i % 3 == 0) {
+            document.write("Fizz");
+          }
+          if (i % 5 == 0) {
+            document.write("Buzz");
+          }
+          if (i % 3 != 0 && i % 5 != 0) {
+            document.write(i);
+          }
+          document.write("<br>");
+        }
+      
+      }
+      </script>
+      
+  </head>
+<body>
+  <button onclick="fizzbuzz()">Click Me</button>
+
+</body>
+</html>
