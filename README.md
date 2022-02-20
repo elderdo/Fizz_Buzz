@@ -9,5 +9,5 @@ After reading the article [Why Can't Programmers..Program?](https://blog.codingh
 - [fizz_buzz.pl  Perl](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.pl)
 - [fizz_buzz.py  Python](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.py)
 - [fizz_buzz.rb  Ruby](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.rb)
-- [fizz_buzz.vbs VBScript](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.rb)
+- [fizz_buzz.vbs VBScript](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.vbs)
 - [fizz_buzz_2.pl Another Perl implementation](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz_2.pl)
