@@ -1,6 +1,6 @@
 # Fizz_Buzz
 A set of examples of the classic Fizz_Buzz Algorithm using various languages.
-After reading the article [Why Can't Programmers..Program?](https://blog.codinghorror.com/why-cant-programmers-program/), I put together these examples of the FizzBuzz Algorithm:
+After reading the article [Why Can't Programmers..Program?](https://blog.codinghorror.com/why-cant-programmers-program/), I put together these examples:
 - [fizz_buzz.ada - ADA](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.ada)
 - [fizz_buzz.c  C](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.c)
 - [fizz_buzz.hta - a special HTML file with VBScript. You can download this file and just double click it to execute it.](https://github.com/elderdo/Fizz_Buzz/blob/main/fizz_buzz.hta)
