@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>~\Documents\Fizz_Buzz\fizz_buzz.pas.html</title>
+<meta name="Generator" content="Vim/8.2">
+<meta name="plugin-version" content="vim8.1_v2">
+<meta name="syntax" content="pascal">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=,use_input_for_pc=fallback">
+<meta name="colorscheme" content="elflord">
+<style>
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #00ffff; background-color: #000000; }
+body { font-family: monospace; color: #00ffff; background-color: #000000; }
+* { font-size: 1em; }
+.Statement { color: #aa4444; font-weight: bold; }
+.Repeat { color: #ffffff; }
+.Constant { color: #ff00ff; }
+.Operator { color: #ff0000; }
+.Comment { color: #80a0ff; }
+.Type { color: #60ff60; font-weight: bold; }
+.Function { color: #ffffff; }
+-->
+</style>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="Comment">{</span>
+<span class="Comment">After reading the blog article &quot;Why Can't Programmers..Program?&quot;</span>
+<span class="Comment">see <a href="https://blog.codinghorror.com/why-cant-programmers-program/">https://blog.codinghorror.com/why-cant-programmers-program/</a></span>
+
+<span class="Comment">Here's my FizzBuzz with Pascal.</span>
+
+<span class="Comment">The code can be execute online at:</span>
+<span class="Comment"><a href="https://www.onlinegdb.com/online_pascal_compiler">https://www.onlinegdb.com/online_pascal_compiler</a></span>
+
+<span class="Comment">To Pascal any text between a left brace and a right brace are</span>
+<span class="Comment">comments and are not executable code.</span>
+
+<span class="Comment">I got my MS in Computer Science Advanced Algorithm course and 3D Graphics</span>
+<span class="Comment">course using Pascal code.  </span>
+<span class="Comment">Pascal was used by universities to teach programming. It was also taught</span>
+<span class="Comment">in some high schools, since the college advanced placement test used</span>
+<span class="Comment">Pascal. Today AP tests use Java.</span>
+
+<span class="Comment">Pascal can be experimented with using a free open source version - see</span>
+<span class="Comment"><a href="https://wiki.freepascal.org/Main_Page">https://wiki.freepascal.org/Main_Page</a>.  freepascal has many mode where</span>
+<span class="Comment">it uses more advanced versions of Pascal like Turbo Pascal or Delphi. I liked</span>
+<span class="Comment">Delphi and used it for years.  In the 90's I would attend a Delphi users group</span>
+<span class="Comment">in Culver City, CA.  With the advent of the internet and YouTube those</span>
+<span class="Comment">types of groups went away.</span>
+
+<span class="Comment">I created some other variations of FizzBuzz and put them on my Github.</span>
+<span class="Comment">see <a href="https://github.com/elderdo/Fizz_Buzz">https://github.com/elderdo/Fizz_Buzz</a> </span>
+<span class="Comment">While browsing github I found many variations of FizzBuzz and some were</span>
+<span class="Comment">very amusing from a Geek standpoint. In 2007 Adam Lindsay created a programming</span>
+<span class="Comment">language called LOLCODE. see <a href="https://en.wikipedia.org/wiki/LOLCODE">https://en.wikipedia.org/wiki/LOLCODE</a> and</span>
+<span class="Comment"><a href="http://www.lolcode.org/">http://www.lolcode.org/</a></span>
+
+<span class="Comment">I then found this FizzBuzz program on github written in LOLCODE:</span>
+<span class="Comment">  <a href="https://github.com/Keith-S-Thompson/fizzbuzz-polyglot/blob/master/fizzbuzz.lol">https://github.com/Keith-S-Thompson/fizzbuzz-polyglot/blob/master/fizzbuzz.lol</a></span>
+
+<span class="Comment">Additional research on Google shows thousands of websites that explore this small,</span>
+<span class="Comment">but useful program to test a person's basic programming skill at writing some code.</span>
+<span class="Comment"><a href="https://www.google.com/search?&amp;q=fizzbuzz+AND+programming">https://www.google.com/search?&amp;q=fizzbuzz+AND+programming</a></span>
+
+<span class="Comment">}</span>
+
+<span class="Statement">program</span> FizzBuzz;
+  <span class="Comment">{ Pascal requires all variables to be declared with their data type</span>
+<span class="Comment">    such as integer, string, ... etc</span>
+<span class="Comment">    see <a href="https://www.tutorialspoint.com/pascal/pascal_data_types.htm">https://www.tutorialspoint.com/pascal/pascal_data_types.htm</a> </span>
+<span class="Comment">    The variable must be defined before the main begin end. block</span>
+<span class="Comment">    of code, which is all the executable code for the program</span>
+<span class="Comment">    that I've called FizzBuzz.</span>
+<span class="Comment">    i is defined as a variable whose data type is an integer.  Pascal</span>
+<span class="Comment">    will then only all i to have counting numbers which can be negative:</span>
+<span class="Comment">      ..... -3, -2, -1, 0, 1, 2, 3, .....</span>
+<span class="Comment">  }</span>
+<span class="Statement">var</span> i : <span class="Type">integer</span>;
+<span class="Statement">begin</span>
+  <span class="Comment">{ execute every statement between the begin and end 100 times</span>
+<span class="Comment">    varying an integer variable called i from 1 to 100 incrementing</span>
+<span class="Comment">    it by 1 for every execution of the begin end block of code.</span>
+<span class="Comment">  }</span>
+  <span class="Repeat">for</span> i := <span class="Constant">1</span> <span class="Repeat">to</span> <span class="Constant">100</span> <span class="Repeat">do</span>
+  <span class="Statement">begin</span>
+    <span class="Comment">{ the mod operator does division and returns the remainder</span>
+<span class="Comment">      so i mod 3 divides i by 3 and returns a remainder and</span>
+<span class="Comment">      is treated as an expression. So 3 mod 3 is an expression that</span>
+<span class="Comment">      is equivalent to zero.</span>
+
+<span class="Comment">      3 mod 3 = 0 tests if the remainder is zero.</span>
+<span class="Comment">      So the if condition then write('......');</span>
+<span class="Comment">      is a test. If the condition is true then write('.....') is executed</span>
+<span class="Comment">      The Pascal write command sends whatever is in the parenthesis to</span>
+<span class="Comment">      the screen.  A single quoted set of characters will have all the</span>
+<span class="Comment">      characters between the single quotes sent to the screen.</span>
+<span class="Comment">      When the variable i is used it sends the value of that variable at</span>
+<span class="Comment">      that point in time.  write does not go to the next line of the </span>
+<span class="Comment">      screen.  So, a write with 'Fizz' followed by a write with 'Buzz'</span>
+<span class="Comment">      will send FizzBuzz to the screen.</span>
+<span class="Comment">      The final statement in the begin .... end; block of code that is</span>
+<span class="Comment">      executed 100 times is writeln();  That command sends the cursor</span>
+<span class="Comment">      to the next line on the screen.  So one of the following is sent</span>
+<span class="Comment">      to the screen on every loop through the begin end block:</span>
+
+<span class="Comment">        Fizz</span>
+<span class="Comment">        Buzz</span>
+<span class="Comment">        FizzBuzz</span>
+<span class="Comment">        or the value of i that is not divisible by 3 and is not divisible by</span>
+<span class="Comment">        5.</span>
+
+<span class="Comment">        the &lt;&gt; in Pascal means not equal.</span>
+<span class="Comment">        the &quot;and&quot; between the two conditions means that both conditions</span>
+<span class="Comment">        must be true.</span>
+
+<span class="Comment">    }</span>
+    <span class="Repeat">if</span> i <span class="Operator">mod</span> <span class="Constant">3</span> = <span class="Constant">0</span> <span class="Repeat">then</span> <span class="Function">write</span>(<span class="Constant">'Fizz'</span>);
+    <span class="Repeat">if</span> i <span class="Operator">mod</span> <span class="Constant">5</span> = <span class="Constant">0</span> <span class="Repeat">then</span> <span class="Function">write</span>(<span class="Constant">'Buzz'</span>);
+    <span class="Repeat">if</span> (i <span class="Operator">mod</span> <span class="Constant">5</span> &lt;&gt; <span class="Constant">0</span>) <span class="Operator">and</span> (i <span class="Operator">mod</span> <span class="Constant">3</span> &lt;&gt; <span class="Constant">0</span>) <span class="Repeat">then</span> <span class="Function">write</span>(i);
+    <span class="Function">writeln</span>();
+  <span class="Statement">end</span>;
+<span class="Statement">end</span>.
+
+
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
