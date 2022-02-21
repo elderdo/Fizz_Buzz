@@ -47,7 +47,7 @@ program FizzBuzz;
     of code, which is all the executable code for the program
     that I've called FizzBuzz.
     i is defined as a variable whose data type is an integer.  Pascal
-    will then only all i to have counting numbers which can be negative:
+    will then only allow i to have counting numbers which can be negative:
       ..... -3, -2, -1, 0, 1, 2, 3, .....
   }
 var i : integer;
